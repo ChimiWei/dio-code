@@ -1,2 +1,2 @@
 # dio-code
-Projetos/Anotações de desafios da DIO
+Projetos/Anotações dos desafios da DIO
