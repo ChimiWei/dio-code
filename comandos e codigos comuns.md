@@ -6,4 +6,5 @@ git add .
 
 git push origin main
 
-git pull 
+git pull <remote>
+
