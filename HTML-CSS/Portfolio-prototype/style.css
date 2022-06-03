@@ -136,21 +136,6 @@ a:hover {
 
 }
 
-.teste {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 40px;
-}
-
 .menu-items {
     position: fixed;
     top: 0;
@@ -178,6 +163,8 @@ a:hover {
     letter-spacing: 4px;
     font-size: 40px;
 }
+
+
 
 /* ANIMAÇÃO DO MENU */
 
@@ -209,10 +196,12 @@ a:hover {
     z-index: 1;
 }
 
-#toggle:checked ~ .menu-items {
-    box-shadow: 0px 0px 0px 100vmax white;
-    z-index: 1;
+#toggle:checked ~ .menu > .menu-items {
+    visibility: visible;
+    opacity: 1;
 }
+
+
 
 /*    CARDS    */
 
@@ -314,4 +303,24 @@ a:hover {
  a.card-wrapper:hover {
     color: white !important;
     background-color: transparent !important;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E1C2B;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    }
 }
