@@ -7,6 +7,10 @@ body {
     font-family: 'amatic sc', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HEADER */
 
 .header-wrapper{
@@ -253,6 +257,16 @@ a:hover {
     color: rgb(100, 100, 100);
 }
 
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color:  white;;
+}
+
 .card-wrapper::before {
     content: '';
     position: absolute;
@@ -289,4 +303,15 @@ a:hover {
     opacity: 1;
     width: 350px;
     height: 250px;
+}
+
+.card:hover > .card-wrapper p {
+    font-size: 14px;
+    opacity: 1;
+    visibility: visible;
+}
+
+ a.card-wrapper:hover {
+    color: white !important;
+    background-color: transparent !important;
 }
